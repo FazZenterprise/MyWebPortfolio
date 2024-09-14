@@ -13,6 +13,31 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="im.png">
     <title>Portfolio | Fazri Yansyah</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+            gap: 20px; /* Jarak antar kotak */
+            justify-items: center;
+        }
+        .grid-item {
+            background-color: #1b1b1b; /* Warna background kotak */
+            padding: 20px;
+            border-radius: 10px;
+            width: 130px; /* Ukuran kotak */
+            height: 130px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+        }
+        .grid-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body oncontextmenu="return false">
 
@@ -108,7 +133,32 @@
 
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
 
-    
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="alightmotion.png" alt="Alightmotion">
+        </div>
+        <div class="grid-item">
+            <img src="expressjs.png" alt="ExpressJS">
+        </div>
+        <div class="grid-item">
+            <img src="nodejs.png" alt="NodeJS">
+        </div>
+        <div class="grid-item">
+            <img src="redux.png" alt="Redux">
+        </div>
+        <div class="grid-item">
+            <img src="firebase.png" alt="Firebase">
+        </div>
+        <div class="grid-item">
+            <img src="android.png" alt="Android">
+        </div>
+        <div class="grid-item">
+            <img src="materialui.png" alt="MaterialUI">
+        </div>
+        <div class="grid-item">
+            <img src="chakraui.png" alt="ChakraUI">
+        </div>
+    </div>
 
             <!-- <div class="bar">
               <div class="info">
