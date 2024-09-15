@@ -42,11 +42,10 @@
   {
     "name": "Desain Grafis",
     "desc": "A graphic design that still has many shortcomings | Edited using Alightmotion",
-    "image": "Projects1",
+    "image": "Newimage",
     "category": "mern",
     "links": {
       "view": "https://instagramernstack.herokuapp.com/",
-      "code": "https://github.com/jigar-sable/instagram-mern"
     }
   },
   {
