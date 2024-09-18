@@ -42,7 +42,7 @@ function getProjects() {
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
-    let projectsHTML = "";
+    let projectsHTML = "index.html";
     projects.forEach(project => {
         projectsHTML += `
         <div class="grid-item ${project.category}">
