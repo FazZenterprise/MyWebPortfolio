@@ -261,7 +261,23 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("XAR0hk3NHO3xWh7wx");
+  })();
 
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_od9ax2c', 'template_dxaveqq', this)
+      .then(function() {
+        alert('Pesan berhasil dikirim!');
+      }, function(error) {
+        alert('Gagal mengirim pesan: ' + JSON.stringify(error));
+      });
+  });
+</script>
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assets/js/script.js"></script>
