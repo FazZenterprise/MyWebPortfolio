@@ -461,7 +461,7 @@ header .navbar ul li a:hover {
 /* Skills Section start */
 .skills {
     padding: 5rem 0;
-    background: var(--dark-blue);
+    background: var(#001529);
 }
 
 .skills-container {
@@ -478,7 +478,7 @@ header .navbar ul li a:hover {
 }
 
 .skill-card {
-    background: var(--card-bg);
+    background: var(#001529);
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
