@@ -458,145 +458,124 @@ header .navbar ul li a:hover {
 /* about media queries ends*/
 /* about section ends */
 
-/* Skills Section Start */
+/* Skills Section start */
 .skills {
-    padding: 5rem 0;
-    background: #0a192f; /* Navy blue */
-    position: relative;
-    overflow: hidden;
-}
-
-/* Fade In Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    padding: 2rem 0;
+    background: #0a192f; /* Navy blue background */
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .skills-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
-.heading {
+/* Header */
+.section-header {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: white; /* White text */
-    animation: fadeIn 1s ease-out forwards;
+    margin-bottom: 2rem;
 }
 
-.heading span {
-    color: #64ffda; /* Teal accent */
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
 }
 
+/* Skills Grid */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .skill-card {
-    background: #112240; /* Darker navy */
-    border-radius: 10px;
-    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 200px;
     text-align: center;
-    border: 1px solid rgba(100, 255, 218, 0.1);
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out forwards;
-    animation-delay: calc(0.2s * var(--i));
 }
 
-.skill-card:nth-child(1) { --i: 1; }
-.skill-card:nth-child(2) { --i: 2; }
-.skill-card:nth-child(3) { --i: 3; }
-.skill-card:nth-child(4) { --i: 4; }
-
-.skill-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 1rem;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.skill-card:hover .skill-icon {
-    transform: scale(1.1);
-}
-
-.skill-card h3 {
+.app-name {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: white; /* White text */
+    color: white;
 }
 
-.skill-card p {
-    color: #ccd6f6; /* Light gray */
-    font-size: 0.9rem;
+.app-category {
+    font-size: 1rem;
+    color: #64ffda; /* Teal accent */
+    margin: 0;
 }
 
-.video-demo {
-    margin-top: 3rem;
-    text-align: center;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out forwards;
-    animation-delay: 0.8s;
+/* Video Section */
+.video-section {
+    margin: 2rem 0;
 }
 
-.video-title {
+.section-title {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: white; /* White text */
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
 }
 
-.video-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+.video-container {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
-.video-wrapper video {
+.video-container video {
     width: 100%;
-    height: auto;
+    border-radius: 4px;
     display: block;
-    border: 1px solid rgba(100, 255, 218, 0.2);
 }
 
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .heading {
-        font-size: 2rem;
-    }
+.video-time {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 0.5rem;
 }
 
-@media (max-width: 480px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .skill-icon {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .heading {
-        font-size: 1.8rem;
-    }
+/* Education Quote */
+.education-quote {
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
 }
 
+.education-quote p {
+    font-size: 1.1rem;
+    color: #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .skill-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .logo {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
   /* skill section end */
 
 /* education section starts */
