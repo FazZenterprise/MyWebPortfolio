@@ -103,36 +103,36 @@
     
     <div class="skills-container">
         <div class="skills-grid">
-            <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/7324/7324082.png" alt="Alight Motion Icon" class="skill-icon">
-                <h3>Alight Motion</h3>
-                <p>Mobile Video Editing</p>
+            <div class="skill-card fade-element">
+                <img src="https://cdn-icons-png.flaticon.com/512/7324/7324082.png" alt="Alight Motion" class="skill-icon">
+                <h3 class="skill-name">Alight Motion</h3>
+                <p class="skill-category">Mobile Video Editing</p>
             </div>
             
-            <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968514.png" alt="Lightroom Icon" class="skill-icon">
-                <h3>Lightroom</h3>
-                <p>Photo Editing</p>
+            <div class="skill-card fade-element">
+                <img src="https://cdn-icons-png.flaticon.com/512/7324/7324098.png" alt="KineMaster" class="skill-icon">
+                <h3 class="skill-name">KineMaster</h3>
+                <p class="skill-category">Video Production</p>
             </div>
             
-            <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/7324/7324114.png" alt="PicsArt Icon" class="skill-icon">
-                <h3>PicsArt</h3>
-                <p>Photo Editing</p>
+            <div class="skill-card fade-element">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968514.png" alt="Lightroom" class="skill-icon">
+                <h3 class="skill-name">Lightroom</h3>
+                <p class="skill-category">Photo Editing</p>
             </div>
             
-            <div class="skill-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/7324/7324098.png" alt="IbisPaint Icon" class="skill-icon">
-                <h3>IbisPaint</h3>
-                <p>Digital Drawing</p>
+            <div class="skill-card fade-element">
+                <img src="https://cdn-icons-png.flaticon.com/512/7324/7324114.png" alt="PicsArt" class="skill-icon">
+                <h3 class="skill-name">PicsArt</h3>
+                <p class="skill-category">Creative Design</p>
             </div>
         </div>
         
-        <div class="video-demo">
-            <h3 class="video-title">Video Editing Demo</h3>
+        <div class="video-demo fade-element">
+            <h3 class="video-title">My Video Editing Demo</h3>
             <div class="video-container">
-                <video controls poster="https://via.placeholder.com/800x450/1e1e1e/bb86fc?text=Video+Demo">
-                    <source src="your-video-demo.mp4" type="video/mp4">
+                <video controls poster="https://via.placeholder.com/800x450/172a45/64ffda?text=Video+Demo">
+                    <source src="your-demo-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -298,6 +298,19 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assets/js/script.js"></script>
-
+<script>
+    // Intersection Observer for fade animations
+    const fadeElements = document.querySelectorAll('.fade-element');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+ 
+    fadeElements.forEach(el => observer.observe(el));
+                                                </script>
 </body>
 </html>
