@@ -298,19 +298,6 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assets/js/script.js"></script>
-<script>
-    // Intersection Observer for fade animations
-    const fadeElements = document.querySelectorAll('.fade-element');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
- 
-    fadeElements.forEach(el => observer.observe(el));
-                                                </script>
+
 </body>
 </html>
