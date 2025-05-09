@@ -531,21 +531,30 @@ header .navbar ul li a:hover {
 }
 /* skills media queries ends*/
 /* Video Container */
+/* Video Container */
 .video-container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.video-container h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
 }
 
 .video-container iframe {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Responsif */
 @media (max-width: 768px) {
-  .video-container iframe {
-    height: 250px;
-  }
+    .video-container iframe {
+        width: 95%;
+        height: 250px;
+    }
 }
 /* skills section ends */
 
