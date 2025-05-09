@@ -530,6 +530,23 @@ header .navbar ul li a:hover {
   }
 }
 /* skills media queries ends*/
+/* Video Container */
+.video-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.video-container iframe {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .video-container iframe {
+    height: 250px;
+  }
+}
 /* skills section ends */
 
 /* education section starts */
